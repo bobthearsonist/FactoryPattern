@@ -1,16 +1,18 @@
-public class Guacomole extends Topping
+package TacoStore;
+
+public class Lettuce extends Topping
 {
-    public Guacomole(Taco taco) {
+    public Lettuce(Taco taco) {
         super(taco);
     }
 
     @Override
     protected double getCost() {
-        return 1.0;
+        return .10;
     }
 
     @Override
     protected String getDecription() {
-        return "Guacomole";
+        return "Lettuce";
     }
 }

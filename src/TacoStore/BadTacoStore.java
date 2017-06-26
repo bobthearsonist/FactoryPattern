@@ -1,3 +1,5 @@
+package TacoStore;
+
 public class BadTacoStore {
 
     static Taco orderTaco(Tacos type)
