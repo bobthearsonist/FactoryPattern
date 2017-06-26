@@ -1,6 +1,6 @@
 public class HardShell extends Shell
 {
-    public HardShell(TacoComponent taco){
+    public HardShell(Taco taco){
         super(taco);
     }
 

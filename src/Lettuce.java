@@ -1,6 +1,6 @@
 public class Lettuce extends Topping
 {
-    public Lettuce(TacoComponent taco) {
+    public Lettuce(Taco taco) {
         super(taco);
     }
 

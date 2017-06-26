@@ -1,8 +1,8 @@
-public abstract class Topping implements TacoComponent
+public abstract class Topping implements Taco
 {
-    TacoComponent taco;
+    Taco taco;
 
-    public Topping(TacoComponent taco){
+    public Topping(Taco taco){
         this.taco = taco;
     }
 
@@ -20,7 +20,7 @@ public abstract class Topping implements TacoComponent
         this.taco.Display();
 
         String taco;
-        taco = "now adding " + this.getDecription() + " to the taco";
+        taco = "now adding " + getDecription() + " to the taco";
         System.out.println(taco);
     }
 

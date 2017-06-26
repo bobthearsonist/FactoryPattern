@@ -1,4 +1,4 @@
-public interface TacoComponent{
+public interface Taco {
     double Cost();
     void Display();
 }

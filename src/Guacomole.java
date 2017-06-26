@@ -1,6 +1,6 @@
 public class Guacomole extends Topping
 {
-    public Guacomole(TacoComponent taco) {
+    public Guacomole(Taco taco) {
         super(taco);
     }
 

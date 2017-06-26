@@ -1,6 +1,6 @@
 public class SoftShell extends Shell
 {
-    public SoftShell(TacoComponent taco){
+    public SoftShell(Taco taco){
         super(taco);
     }
 

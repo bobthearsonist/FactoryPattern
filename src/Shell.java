@@ -1,8 +1,8 @@
-public abstract class Shell implements TacoComponent
+public abstract class Shell implements Taco
 {
-    TacoComponent taco;
+    Taco taco;
 
-    public Shell(TacoComponent taco){
+    public Shell(Taco taco){
         this.taco = taco;
     }
 

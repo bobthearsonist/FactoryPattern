@@ -1,4 +1,4 @@
-public class GringoTaco implements TacoComponent
+public class GringoTaco implements Taco
 {
     @Override
     public double Cost() {
