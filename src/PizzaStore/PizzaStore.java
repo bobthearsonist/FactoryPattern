@@ -10,11 +10,11 @@ public class PizzaStore
         {
             case Cheese:
             {
-                pizza = new CheesePizza();
+                pizza = new CheesePizza(Type.Cheese);
             }
             default:
             {
-                pizza = new CheesePizza();
+                pizza = new CheesePizza(Type.Cheese);
             }
         }
 
