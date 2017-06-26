@@ -1,19 +1,28 @@
 package PizzaStore;
 
-/**
- * Created by mperry on 6/25/17.
- */
-public class PizzaStore {
-    public static void main(String args[]) {
-
-    }
-
-    Pizza orderPizza()
+public class PizzaStore
+{
+    Pizza orderPizza(Type typeOfPizza)
     {
-        return new Pizza();
+        Pizza pizza;
+
+        switch (typeOfPizza)
+        {
+            case Cheese:
+            {
+                pizza = new CheesePizza();
+            }
+            default:
+            {
+                pizza = new CheesePizza();
+            }
+        }
+
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
+
+        return pizza;
     }
-}
-
-class Pizza{
-
 }
