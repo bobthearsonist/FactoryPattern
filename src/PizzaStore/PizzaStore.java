@@ -1,29 +1,10 @@
 package PizzaStore;
 
-public class PizzaStore
+public abstract class PizzaStore
 {
     Pizza orderPizza(Type typeOfPizza)
     {
-        Pizza pizza;
-
-        switch (typeOfPizza)
-        {
-            case Cheese:
-            {
-                pizza = new CheesePizza(Type.Cheese);
-                break;
-            }
-            case Greek:
-            {
-                pizza = new GreekPizza(Type.Greek);
-                break;
-            }
-            default:
-            {
-                pizza = new CheesePizza(Type.Cheese);
-                break;
-            }
-        }
+        Pizza pizza = createPizza(typeOfPizza);
 
         pizza.prepare();
         pizza.bake();
@@ -32,4 +13,7 @@ public class PizzaStore
 
         return pizza;
     }
+
+    protected abstract Pizza createPizza(Type typeOfPizza);
 }
+

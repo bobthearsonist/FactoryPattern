@@ -5,7 +5,7 @@ package PizzaStore;
  */
 public class BadPizzaStoreApp {
     public static void main(String args[]) {
-        PizzaStore store = new PizzaStore();
+        PizzaStore store = new NewYorkPizzaStore();
 
         Pizza cheese = store.orderPizza(Type.Cheese);
         Pizza greek = store.orderPizza(Type.Greek);
