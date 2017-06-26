@@ -11,7 +11,7 @@ public abstract class Pizza{
 
     void prepare()
     {
-        System.out.println("this is a " + type + " pizza");
+        System.out.println("this is a " + type.toString() + " pizza");
         System.out.println("preparing");
         System.out.println("toss dough");
         System.out.println("add sauce");

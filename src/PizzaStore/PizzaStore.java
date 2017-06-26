@@ -11,10 +11,17 @@ public class PizzaStore
             case Cheese:
             {
                 pizza = new CheesePizza(Type.Cheese);
+                break;
+            }
+            case Greek:
+            {
+                pizza = new GreekPizza(Type.Greek);
+                break;
             }
             default:
             {
                 pizza = new CheesePizza(Type.Cheese);
+                break;
             }
         }
 

@@ -7,7 +7,8 @@ public class BadPizzaStoreApp {
     public static void main(String args[]) {
         PizzaStore store = new PizzaStore();
 
-        Pizza pizza = store.orderPizza(Type.Cheese);
+        Pizza cheese = store.orderPizza(Type.Cheese);
+        Pizza greek = store.orderPizza(Type.Greek);
     }
 }
 
